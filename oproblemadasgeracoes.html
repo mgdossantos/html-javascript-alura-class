@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaGeracoes(){
+		var ano=2018;
+		var mediaIdade=28;
+		var numeroGeracoes=(ano-1500)/mediaIdade;
+		var numeroGeracoes=Math.round(numeroGeracoes);
+		mostra("O numero de geracoes é: "+numeroGeracoes);
+	}
+
+	calculaGeracoes();
+
+</script>

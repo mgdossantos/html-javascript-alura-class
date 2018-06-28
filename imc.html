@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+	}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+	}
+
+
+	function imc(altura,peso){
+		var imc=peso/ (altura *altura);
+		return Math.round(imc);
+	}
+
+	var nome=prompt("Digite seu nome.")
+	var altura=prompt("Digite sua altura.(em metros, use .)");
+	var peso=prompt("Digite seu peso.(em Kg, use .)");
+	mostra(nome+",seu IMC é: "+imc(altura,peso));
+
+	if(imc(altura,peso)<18.5){
+		mostra("Você está abaixo da media aceitável pela OMS!!!!");
+	}
+	else{
+		if(ifmc(altura,peso)<35){
+			mostra("Você está na media aceitável pela OMS!!!!");
+		}
+		else{
+			mostra("Você está acima da média aceitável pela OMS!!")
+		}
+
+	}	
+
+</script>

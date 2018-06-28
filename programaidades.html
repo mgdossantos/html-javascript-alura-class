@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+	
+
+	function pulaLinha(){
+		var pulolinha="<br><br>"
+		document.write(pulolinha);
+	}
+
+	function mostra(texto){
+		document.write(texto);
+		pulaLinha();
+	}
+	var ano=2018;
+	var media=0;
+	var nome="Flávio"
+    mostra(nome +" tem " +(ano- 1977)+" anos.");
+	media=media+(ano-1977);
+
+    nome="Joaquim"
+    mostra(nome+" tem " + (ano - 1996)+ " anos.");
+    media=media+(ano-1996);
+
+    nome="Barney";
+    mostra(nome+ " tem " + (ano - 1976)+" anos.");
+    media=media+(ano-1976);
+    media=media/3;
+    mostra("A média das idadades é : "+ Math.round(media));
+
+   	var nome="Flávio"
+   	var idadeFlavio=ano-1977 
+	document.write("A idade do "+nome+" é : "+idadeFlavio+" anos."); 
+
+</script>
